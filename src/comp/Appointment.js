@@ -1,5 +1,5 @@
 import { BiCalendarPlus } from "react-icons/all";
-
+import "../index.css";
 import { useState } from "react";
 
 export const Appointment = ({lastIndex,onSaveAppointement}) => {
@@ -58,7 +58,7 @@ export const Appointment = ({lastIndex,onSaveAppointement}) => {
                 name="ownerName"
                 value={formData.ownerName}
                 id="ownerName"
-                className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-black-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
                 onChange={(event) =>
                   setFormData({ ...formData, ownerName: event.target.value })
                 }

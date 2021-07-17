@@ -54,9 +54,11 @@ export const Interface_one = () => {
     });
 
   return (
-    <div className="conteiner mx-auto mt-3 font-semibold  ">
-      <GoCalendar className="inline" />
-      <h2 className="text-red-400 inline m-5">This is your interface</h2>
+    <div className="conteiner mx-auto mt-3 font-semibold w-3/6 ">
+      <div className="mx-auto my-10 text-center ">
+      <GoCalendar className="inline text-5xl mb-5" />
+      <h2 className="text-red-400 inline text-5xl m-5">Appintment's Manager</h2>
+      </div>
       <Appointment 
       onSaveAppointement={newApoointement=>setAppointmentsList([...appointmentsList,newApoointement])} lastIndex={appointmentsList.reduce((max,item)=>Number(item.id)>max?Number(item.id):max,0)}
       />
